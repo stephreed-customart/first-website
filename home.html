@@ -12,9 +12,9 @@
   </head>
   <body>
     <header>
-        <div>
-            <img src="img/logo.svg" alt="logo" >
-            <nav>
+        <div class="container">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <nav class="navigation">
                 <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">about</a></li>
@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <div>
+        <div id="hero">
             <div>
                 <h1>
                     Hi there!
@@ -33,16 +33,16 @@
                     <span>I'm Stephanie Reed, a UI Designer from Chicago, IL. </span>
                 </h1>
             </div>
-            <p>
+            <p> 
                 Creative and very detail-oriented professional with experience in graphic design, typography, illustration and branding. Transitioning into a UI career, bringing strong design skills, proficiency in design tools, and a passion for creating intuitive user interfaces.
             </p>
         </div>
-        <div>
-            <div>
+        <div id="work">
+            <div class="container">
                 <h2>My Work</h2>
-                <div><!--open row that holds (2) columns for project -->
+                <div class="row"><!--open row that holds (2) columns for project -->
                     <div><!-- open first column (used for image) -->
-                        <img src="img/bookit/bi:600px/bi_1_1x.png" alt="logo">
+                        <img src="img/bookit/bi:600px/bi_1_1x.png" alt="book it" class="center">
                     </div><!-- end first column -->
                     <div><!-- open second column (used for text) -->
                         <h3>Book It!</h3><!-- heading for the project -->
@@ -52,9 +52,9 @@
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
                 <br>
-                <div><!--open row that holds (2) columns for project -->
+                <div class="row"><!--open row that holds (2) columns for project -->
                     <div><!-- open first column (used for image) -->
-                        <img src="img/woofmeow/wm:600px/wm_1_1x.png" alt="Woof and Meow">
+                        <img src="img/woofmeow/wm:600px/wm_1_1x.png" alt="Woof and Meow" class="img">
                     </div><!-- end first column -->
                     <div><!-- open second column (used for text) -->
                     <h3>Woof and Meow</h3><!-- heading for the project -->
@@ -67,7 +67,7 @@
         </div>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <h2>Get In Touch</h2>
             <p>  Do you like my work and want to discuss opportunities? Please get in touch. Call: <a href ="tel:13122178885">(312)-217-8885 </a>. Prefer sending an email?
             </p>
