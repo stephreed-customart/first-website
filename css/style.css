@@ -1,75 +1,46 @@
 /*colors used: Primary color (white): #000000; Secondary Color (Light Blue): #ECF4FF; */
 
+/* ====HEADER==== */
 header {
   position: fixed;
   width: 100%;
   background-color: #ECF4FF;
-  text-align: center;
+  text-align: left;
   display: inline-block;
-  padding: 20px 0;
-  border-bottom: 1px  solid #0235C0;
+  padding: 20px 0 0;
+  border-bottom: 0px  solid #0235C0;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
-body {
-  background-color: #ffffff;
-  font-family: 'montserrat', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
-}
-main {
-  padding:  200px 0 0 0;
-}
 
-
-.logo {
-  max-width: 250px;
-}
-
-span{
-  display:inline
-}
-#hero h1 {
-  text-align: center; /* Centers text */
-}
-#hero {
-  padding: 20px 0px 0px 0px;
-  text-align: center;
-  background-color: #ECF4FF;
-  display: inline-block;
-  width: 100%;
-}
-#hero p {
-  text-align: center;
-  padding: 0px 20px 10px 20px;
-}
-
-
+/* ====NAVIGATION==== */
 nav > ul {
   list-style-type: none;
   padding: 0;
+  text-decoration: none;
+  font-size: 14px;
 }
 nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 5px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #4a4a4a;
+  text-decoration: none;
 }
-nav > ul > li > a:visited {
+/*nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #0235C0;
-}
+}*/
 nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #1EE4DD;
+  font-weight: 600;
+  color: #0235C0;
+  text-decoration: underline;
 }
 nav > ul > li > a:active {
   padding: 0 15px;
@@ -79,14 +50,58 @@ nav > ul > li > a:active {
   text-decoration: underline;
 }
 
+.logo {
+  max-width: 60%;
+}
+
+/* ====BODY/WHOLE PAGE==== */
+body {
+  background-color: #ffffff;
+  font-family: 'montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* ====MAIN/CENTER PAGE==== */
+main {
+  padding:  130px 0 0 0;
+}
 
 
+span{
+  display:inline
+}
+#hero span {
+  display: block;
+}
+#hero h1 {
+  text-align: left;
+  
+}
+#hero {
+  padding: 0;
+  text-align: left;
+  background-color: #f6ffff;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#hero p {
+  text-align: left;
+  padding: 0px 20px 10px;
+}
+
+
+/* ====HEADERS==== */
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.55em;
+  font-weight: 700;
+  padding: 20px 0 0 0;
 }
 h2 {
   font-size: 2.25em;
@@ -101,35 +116,42 @@ h4 {
   font-size: 1.35em;
   font-weight: 300;
 }
+img {
+  max-width: 100%;
+}
 
 
+/* ====BUTTONS==== */
+/*button*/
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block; 
   background-color: #0235C0;
-  border: 2px solid #0235C0;
-  color: #ffffff; /* needed to override the default link color */
+  border: 0px solid #0235C0;
+  color: #ffffff;
   font-weight: 400;
-  margin: 20px;
+  margin: 20px 0 0 0 ;
   padding: 20px 60px;
   border-radius: 40px;
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 .button:hover {
-  background-color: #ffffff;
-  border: 2px solid #0235C0;
-  color: #0235C0; 
-  opacity: 0.5; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
+  opacity: 0.8;
+  background-color: #0235C0;
+  border: 0px solid #0235C0;
+  color: #ffffff;  
+  text-decoration:underline;
 }
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  transition: 0.8s opacity;
   text-decoration: none;
 }
+/*button contact*/
 .button.contact {
   background-color: #ffffff;
   color: #0235C0;
   border: 2px solid #0235C0;
-  margin: 0 0 30px;
+  margin: 20px 0 30px;
   padding: 20px 60px;
   border-radius: 40px;
   transition: 0.2s opacity;
@@ -137,8 +159,8 @@ h4 {
 .button.contact:hover {
   background-color: #0235C0;
   color: #ffffff;
-  opacity: 0.8;
   border-radius: 40px;
+  transition: 0.8s opacity;
 }
 .button.contact:active {
   background-color: #0235C0;
@@ -146,74 +168,57 @@ h4 {
   border-radius: 40px;
 }
 
+/*transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];*/
 
-img {
-  max-width: 100%;
-}
-#footer a {
-  color: #0235C0;
-  text-decoration: none; /* No underlining */
-}
-#footer a:hover {
-  color: #1EE4DD;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-#footer a:visited { /* visited link */
-  color: #0235C0;
-  text-decoration: bold; 
-}
-#footer a:active { /* selected link */
-  color: #1EE4DD;
-}
-
-/* Layout styling */
+/* ====LAYOUT STYLING==== */
 .container {
-padding: 0 15px;
+padding: 0 20px;
 }
 .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
 #work .row { 
     padding-bottom: 25px; border-bottom: 1px solid #0235C0; 
 }
-
 .center {
     text-align: center;
 }
 
+/* ====FOOTER==== */
+#footer a {
+  color: #0235C0;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #1EE4DD;
+  text-decoration: underline;
+}
+#footer a:visited {
+  color: #0235C0;
+  text-decoration: bold; 
+}
+#footer a:active {
+  color: #1EE4DD;
+}
 .social a{
   display:inline-block;
   width: 30px;
   margin: 10px 10px;
 } 
-
 .social{
   text-align: center;
 }
 footer > ul > li {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 footer {
-  background-color: #ECF4FF;
-  padding: 20px;
-  position: relative;top: 40px;
-  text-align: center;
+background-color: #ECF4FF;
+padding: 20px;
+position: relative;top: 40px;
+text-align: center;
 }
 
-/*.col-1 {width: 8.33%;}
-.col-md-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}*/
-
+/* ====COLUMNS==== */
 /*.col-1 {width: 8.33%;}
 .col-lg-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -227,15 +232,119 @@ footer {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}*/
 
+[class*="col-"] {
+  float: left;
+  padding: 20px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* ====RESPONSIVE==== */
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    padding: 0 14px;
+  }
+  .logo {
+    max-width: 30%;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  #hero h1 {
+    text-align: center;
+    max-width: 95%;
+    padding: 20px 100px 10px;
+  }
+  #hero {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  #hero p {
+    max-width: 80%;
+    text-align: center;
+    padding: 0px 80px 10px;
+  }
+  main {
+    padding: 80px 0 0 0;
+  }
+  body {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  img {
+    max-width: 100%;
+    text-align: center;
+  }
+  .col-md-6 {
+  width: 50%;
+  padding: 0;
+  }
+  h2 {
+  text-align: center;
+  font-size: 40px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0px;
+  }
+  .button {
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    padding: 20px 60px;
+    display: center;
+  }
+  .social a{
+    display:inline-block;
+    width: 60px;
+    margin: 20px 10px;
+  } 
 }
+
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  #about img {
+    text-align: center;
+  }
+  
+  .col-lg-7 {
+    padding: 100px 0 0 0;
+    width: 58.33%;
+    }
+  .col-lg-5 {
+    width: 41.66%;
+    }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+   }  
+}
+
+
+/*ipad devices (768px and larger)
+================================= */
+@media only screen and (min-width: 768px) {
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -246,4 +355,35 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+}
+
+
+/* ====ANIMATION==== */
+/*sun*/
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+/*clouds*/
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
