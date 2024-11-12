@@ -1,5 +1,6 @@
 /*colors used: Primary color (white): #000000; Secondary Color (Light Blue): #ECF4FF; */
-
+*{box-sizing: border-box;
+}
 /* ====HEADER==== */
 header {
   position: fixed;
@@ -7,15 +8,17 @@ header {
   background-color: #ECF4FF;
   text-align: left;
   display: inline-block;
-  padding: 20px 0 0;
+  padding: 0px 0px;
   border-bottom: 0px  solid #0235C0;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ====NAVIGATION==== */
 nav > ul {
+  text-align: center;
   list-style-type: none;
   padding: 0;
+  margin:0px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -36,22 +39,21 @@ nav > ul > li > a {
   color: #0235C0;
 }*/
 nav > ul > li > a:hover {
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
   color: #0235C0;
   text-decoration: underline;
 }
 nav > ul > li > a:active {
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
   text-decoration: underline;
 }
 
-.logo {
-  max-width: 60%;
+img.logo {
+  max-width: 40%;
+  display: center;
 }
 
 /* ====BODY/WHOLE PAGE==== */
@@ -66,10 +68,8 @@ body {
 
 /* ====MAIN/CENTER PAGE==== */
 main {
-  padding:  130px 0 0 0;
+  padding: 130px 0 0 0;
 }
-
-
 span{
   display:inline
 }
@@ -81,7 +81,7 @@ span{
   
 }
 #hero {
-  padding: 0;
+  padding: 30px 0 20px;
   text-align: left;
   background-color: #f6ffff;
   display: inline-block;
@@ -118,19 +118,26 @@ h4 {
 }
 img {
   max-width: 100%;
+  display: center;
+}
+#about-picture.berlin-illustration {
+  max-width: 100%;
 }
 
-
+li {
+  text-align: left;
+}
 /* ====BUTTONS==== */
 /*button*/
+
 .button {
   display: inline-block; 
   background-color: #0235C0;
   border: 0px solid #0235C0;
   color: #ffffff;
   font-weight: 400;
-  margin: 20px 0 0 0 ;
-  padding: 20px 60px;
+  margin: 20px;
+  padding: 20px 40px;
   border-radius: 40px;
   transition: 0.2s opacity;
   text-decoration: none;
@@ -148,6 +155,7 @@ img {
 }
 /*button contact*/
 .button.contact {
+  text-align: center;
   background-color: #ffffff;
   color: #0235C0;
   border: 2px solid #0235C0;
@@ -214,10 +222,26 @@ footer > ul > li {
 footer {
 background-color: #ECF4FF;
 padding: 20px;
-position: relative;top: 40px;
+position: relative;
+top: 2px;
 text-align: center;
 }
+footer p{
+  text-align: center;
+}
 
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
 /* ====COLUMNS==== */
 /*.col-1 {width: 8.33%;}
 .col-lg-2 {width: 16.66%;}
@@ -255,22 +279,29 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-    padding: 0 14px;
+  }
+  nav > ul {
+    font-size: 18px;
+  }
+  nav > ul > li > a {
+    padding: 0 10px;
   }
   .logo {
+    float: left;
     max-width: 30%;
-  }
-  
-  h1 {
-    text-align: center;
+    padding: 0px 0px 20px 0px;
   }
   #hero h1 {
     text-align: center;
-    max-width: 95%;
-    padding: 20px 100px 10px;
+    max-width: 100%;
+    padding: 20px 0px 10px;
+  }
+  h1 {
+    text-align: center;
+    padding: 40px;
   }
   #hero {
-    padding: 0;
+    padding: 20px;
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -278,10 +309,11 @@ Medium devices (640px and larger)
   #hero p {
     max-width: 80%;
     text-align: center;
-    padding: 0px 80px 10px;
+    padding: 0px 0px 20px;
+    margin: auto;
   }
   main {
-    padding: 80px 0 0 0;
+    padding: 100px 0 0 0;
   }
   body {
     font-size: 18px;
@@ -292,22 +324,41 @@ Medium devices (640px and larger)
     max-width: 100%;
     text-align: center;
   }
-  .col-md-6 {
-  width: 50%;
-  padding: 0;
+  p {
+     text-align: center;
   }
+  }
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
   h2 {
   text-align: center;
   font-size: 40px;
   }
   h3 {
     margin: 0;
-    padding: 0px;
+    padding: 0 20px;
+    font-size: 30px;
+  }
+  #work p {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  #contact p {
+    font-size: 18px;
   }
   .button {
-    text-align: center;
-    margin: 20px 0 0 0 ;
-    padding: 20px 60px;
+    margin: 20px;
     display: center;
   }
   .social a{
@@ -315,31 +366,78 @@ Medium devices (640px and larger)
     width: 60px;
     margin: 20px 10px;
   } 
-}
+
 
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)
+  main {
+    padding: 405px 0 0 0;
+  }
+  body {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  }
   #about img {
     text-align: center;
   }
-  
-  .col-lg-7 {
-    padding: 100px 0 0 0;
-    width: 58.33%;
-    }
-  .col-lg-5 {
-    width: 41.66%;
-    }
+  h1 {
+    padding: 20px 0;
+  }
+  h2 {
+    padding: 20px 0 0;
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+  li {
+    text-align: left;
+  }
+  .button {
+    display: left;
+  }
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-mlgd-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-   }  
-}
+    max-width: 1400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+    text-align: center;
+  } 
+  footer{
+    padding: 0 50px;
+  }
+  #footer p {
+    text-align: center;
+    }
+
+   nav {
+    padding: 20px 0 0 0;
+  }
+   .container {
+  padding: 0 20px;
+  }
+ 
+  
 
 
 /*ipad devices (768px and larger)
