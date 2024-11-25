@@ -22,9 +22,7 @@ nav > ul {
   text-decoration: none;
   font-size: 14px;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 5px;
   text-transform: uppercase;
@@ -126,7 +124,12 @@ img {
 #about-picture.berlin-illustration {
   max-width: 100%;
 }
-
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 li {
   text-align: left;
 }
@@ -376,6 +379,12 @@ Medium devices (640px and larger)
   content: "";
   clear: both;
   display: table;
+}
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
 }
 }
 
