@@ -1,3 +1,14 @@
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+
+
+
 /*var age = 31;
 var name = 'Lisa';
 console.log(name);
