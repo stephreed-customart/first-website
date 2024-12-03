@@ -471,8 +471,8 @@ Large devices (1024px or larger)
 
   .container {
     max-width: 1400px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     max-width: 100%;
   } 
   .centered {
