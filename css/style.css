@@ -51,7 +51,6 @@ nav > ul > li > a:active {
 
 img.logo {
   max-width: 200px;
-  display: center;
 }
 
 /* ====BODY/WHOLE PAGE==== */
@@ -119,7 +118,6 @@ h4 {
 }
 img {
   max-width: 100%;
-  display: center;
 }
 #about-picture.berlin-illustration {
   max-width: 100%;
@@ -226,8 +224,7 @@ padding: 0 20px;
   text-decoration: underline;
 }
 #footer a:visited {
-  color: #0235C0;
-  text-decoration: bold; 
+  color: #0235C0; 
 }
 #footer a:active {
   color: #1EE4DD;
@@ -361,7 +358,6 @@ Medium devices (640px and larger)
   }
   .button {
     margin: 20px;
-    display: center;
   }
   .social a{
     display:inline-block;
@@ -453,9 +449,7 @@ Large devices (1024px or larger)
   li {
     text-align: left;
   }
-  .button {
-    display: left;
-  }
+  
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
   .col-lg-3 {width: 25%;}
